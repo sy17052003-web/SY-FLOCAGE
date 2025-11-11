@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallerie</title>
+    <link rel="stylesheet" href="gallerie.css"> 
+</head>
+<body>
+    
+    <header>
+    <div class="logo">⚽ FlocMaillot</div>
+    <nav>
+      <ul>
+        <li><a href="page acceuil .html">Accueil</a></li>
+        <li><a href="reservation .html">Réservation</a></li>
+        <li><a href="gallerie .html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container gallery-main">
+    <h1 style="text-align: center;">Galerie — réalisations</h1>
+    <p style="text-align: center;">Cliquez sur une image pour agrandir.</p>
+
+    <div class="grille-gallerie" id="galleryGrid">
+      <img src="africain.jpg" alt="Maillot 1" class="element-gallerie">
+      <img src="khalifa.jpg" alt="Maillot 2" class="element-gallerie">
+      <img src="mbaye.jpg" alt="Maillot 3" class="element-gallerie">
+      <img src="pedri.jpg" alt="Maillot 4" class="element-gallerie">
+      <img src="prince aly.jpg" alt="Maillot 5" class="element-gallerie">
+      <img src="img/sample6.jpg" alt="Maillot 6" class="element-gallerie">
+    </div>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <button class="lightbox-close" id="lightboxClose">&times;</button>
+      <img id="lightboxImg" src="" alt="">
+      <p id="lightboxCaption"></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 FlocMaillot - Tous droits réservés</p>
+  </footer>
+
+</body>
+
+</html>
