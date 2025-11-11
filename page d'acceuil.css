@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+}
+
+header {
+  background: #000000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 4px 9px;
+  border-radius: 15px;
+}
+
+.forme {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  color: #fdfdfdf1;
+}
+
+.forme-contenu {
+  background: #000000;
+  padding: 40px;
+  border-radius: 15px;
+  animation: fadeIn 2s ease;
+  max-width: 600px;
+  width: 90%;
+}
+
+.forme h1 {
+  font-size: 2.2em;
+  margin-bottom: 15px;
+}
+
+.forme p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.boutton {
+  background: #ffffff;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+  display: inline-block;
+}
+
+.boutton:hover {
+  background: #ffffff;
+}
+
+/* Services */
+.services {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgb(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Footer */
+footer {
+  background: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* -------- MEDIA QUERIES -------- */
+@media (max-width: 1024px) {
+  header {
+    padding: 15px 20px;
+  }
+
+  .forme-contenu {
+    padding: 30px;
+  }
+
+  .form h1 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .forme h1 {
+    font-size: 1.8em;
+  }
+
+  .forme p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .form h1 {
+    font-size: 1.5em;
+  }
+
+  .forme-contenu {
+    padding: 20px;
+  }
+
+  .boutton {
+    padding: 8px 15px;
+    font-size: 0.9em;
+  }
+}
