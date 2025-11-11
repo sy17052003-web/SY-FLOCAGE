@@ -86,8 +86,44 @@ footer {
   margin-top: 3rem;
 }
 
-@media (max-width: 800px) {
+/* -------- MEDIA QUERIES -------- */
+@media (max-width: 1024px) {
   .contact-container {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 2rem 3%;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 1.5rem 1rem;
+  }
+  .info-contact, .formulaire-contact {
+    padding: 1.5rem;
+  }
+  input, textarea {
+    font-size: 0.95rem;
+    padding: 0.7rem;
+  }
+  .btn {
+    font-size: 0.95rem;
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  input, textarea {
+    font-size: 0.9rem;
+  }
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+  }
+  .contact-item a {
+    font-size: 0.95rem;
   }
 }
