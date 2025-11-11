@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réservation T-shirt</title>
+  <link rel="stylesheet" href="../css/reservation .css">
+</head>
+<body>
+  <header>
+    <div class="logo">👕 FlocMaillot</div>
+    <nav>
+      <ul>
+        <li><a href="page acceuil .html">Accueil</a></li>
+        <li><a href="reservation-tshirt.html">Réservation</a></li>
+        <li><a href="gallerie .html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="reservation">
+    <h1>Crée ton t-shirt personnalisé</h1>
+    <p>Exprime ton style ! Choisis la couleur, le texte et les détails de ton t-shirt.</p>
+
+    <form id="formeReservation">
+      <div class="forme">
+        <label for="texte">Texte à imprimer :</label>
+        <input type="text" id="texte" name="texte" placeholder="Ex : Team SY" required>
+      </div>
+
+      <div class="forme">
+        <label for="couleur">Couleur du t-shirt :</label>
+        <input type="text" id="couleur" name="couleur" placeholder="Ex : Noir, Blanc, Bleu..." required>
+      </div>
+
+      <div class="forme">
+        <label for="taille">Taille :</label>
+        <select id="taille" name="taille" required>
+          <option value="">-- Taille --</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+        </select>
+      </div>
+
+      <div class="forme">
+        <label for="message">Commentaire (optionnel) :</label>
+        <textarea id="message" name="message" placeholder="Ex : Logo sur le dos, police manuscrite..."></textarea>
+      </div>
+
+      <button type="submit" class="btn">Envoyer la réservation</button>
+    </form>
+
+    <div id="confirmation" class="confirmation">
+      ✅ Réservation envoyée ! Nous te contacterons très bientôt.
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 FlocMaillot - Tous droits réservés</p>
+  </footer>
+
+  <script src="../js/reservation.js"></script>
+</body>
+</html>

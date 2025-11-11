@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Flocage Pro</title>
+  <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+  <header>
+    <h1>Contactez-nous</h1>
+    <p>Une question, une commande ou un partenariat ? Nous sommes à votre écoute.</p>
+  </header>
+
+  <main class="contact-container">
+    <section class="info-contact">
+      <h2>Nos coordonnées</h2>
+
+      <div class="contact-item">
+        <h3>📞 Téléphone</h3>
+        <p><a href="tel:+221784654857">+221 78 465 48 57</a></p>
+      </div>
+
+      <div class="contact-item">
+        <h3>📧 Email</h3>
+        <p><a href="mailto:sy17052003@gmail.com">sy17052003@gmail.com</a></p>
+      </div>
+
+      <div class="contact-item">
+        <h3>💬 WhatsApp</h3>
+        <p><a href="https://wa.me/221784654857" target="_blank">Discuter sur WhatsApp</a></p>
+      </div>
+    </section>
+
+    <section class="formulaire-contact">
+      <h2>Envoyer un message</h2>
+      <form id="formContact">
+        <label>Nom complet</label>
+        <input type="text" name="nom" placeholder="Votre nom" required>
+
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Votre adresse email" required>
+
+        <label>Message</label>
+        <textarea name="message" rows="5" placeholder="Votre message..." required></textarea>
+
+        <button type="submit" class="btn">Envoyer</button>
+      </form>
+
+      <div id="confirmation-contact">✅ Message envoyé avec succès !</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Flocage Pro | Tous droits réservés</p>
+  </footer>
+
+  <script src="../js/contact.js"></script>
+</body>
+</html>

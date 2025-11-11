@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réservation Lot d'équipe</title>
+  <link rel="stylesheet" href="../css/reservation .css">
+</head>
+<body>
+  <header>
+    <div class="logo">🏆 FlocMaillot</div>
+    <nav>
+      <ul>
+        <li><a href="page acceuil .html">Accueil</a></li>
+        <li><a href="reservation-lot.html">Réservation</a></li>
+        <li><a href="gallerie .html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="reservation">
+    <h1>Réserve un lot de maillots pour ton équipe</h1>
+    <p>Idéal pour clubs, tournois ou associations. Personnalise chaque maillot facilement !</p>
+
+    <form id="formeReservation">
+      <div class="forme">
+        <label for="nomEquipe">Nom de l’équipe :</label>
+        <input type="text" id="nomEquipe" name="nomEquipe" placeholder="Ex : FC Dakar" required>
+      </div>
+
+      <div class="forme">
+        <label for="nombre">Nombre de maillots :</label>
+        <input type="number" id="nombre" name="nombre" min="5" placeholder="Ex : 11" required>
+      </div>
+
+      <div class="forme">
+        <label for="type">Type de maillot :</label>
+        <select id="type" name="type" required>
+          <option value="">-- Choisis le modèle --</option>
+          <option value="domicile">Domicile</option>
+          <option value="exterieur">Extérieur</option>
+          <option value="entrainement">Entraînement</option>
+        </select>
+      </div>
+
+      <div class="forme">
+        <label for="message">Détails personnalisés :</label>
+        <textarea id="message" name="message" placeholder="Ex : Couleur rouge, numéros de 1 à 11, sponsor inclus..."></textarea>
+      </div>
+
+      <button type="submit" class="btn">Envoyer la réservation</button>
+    </form>
+
+    <div id="confirmation" class="confirmation">
+      ✅ Réservation envoyée ! Nous te contacterons pour finaliser la commande.
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 FlocMaillot - Tous droits réservés</p>
+  </footer>
+
+  <script src="../js/reservation.js"></script>
+</body>
+</html>
